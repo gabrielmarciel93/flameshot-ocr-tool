@@ -6,8 +6,8 @@ Ferramenta Linux para captura de tela com OCR integrado (português e inglês).
 
 | Comando | Descrição |
 |---------|-----------|
-| `flameshot.sh` | Abre o flameshot para captura de tela normal |
-| `flameshot-ocr.sh` | Captura a tela, reconhece o texto e copia para área de transferência |
+| `flameshot.sh` | Apenas prints normais (captura e salva a imagem manualmente) |
+| `flameshot-ocr.sh` | Extrai texto de imagens com OCR (português/inglês) e copia para área de transferência |
 
 ## Instalação
 
@@ -27,12 +27,14 @@ instala as dependências e copia os scripts para `~/bin/`.
 ## Como funciona
 
 ```
-flameshot.sh:         flameshot gui → seleciona área → salva manualmente
+flameshot.sh (prints normais):
+  flameshot gui → seleciona a área → salva a imagem manualmente
 
-flameshot-ocr.sh:     flameshot gui → seleciona área
-                      → tesseract OCR (português + inglês)
-                      → texto copiado para área de transferência
-                      → notificação
+flameshot-ocr.sh (extrair texto de imagem):
+  flameshot gui → seleciona a área
+  → tesseract OCR (português + inglês)
+  → texto copiado para área de transferência
+  → notificação
 ```
 
 ## Dependências
