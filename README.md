@@ -22,7 +22,14 @@ instala as dependências e copia os scripts para `~/bin/`.
 ## Atalho de teclado
 
 1. Configurações do sistema → Teclado → Atalhos → Adicionar
-2. Comando: `/home/seu usuario/bin/flameshot.sh` ou `flameshot-ocr.sh`
+2. Para **prints normais**, use o comando:
+   ```
+   /home/seu usuario/bin/flameshot.sh
+   ```
+3. Para **extrair texto de imagens com OCR**, use o comando:
+   ```
+   /home/seu usuario/bin/flameshot-ocr.sh
+   ```
 
 ## Como funciona
 
